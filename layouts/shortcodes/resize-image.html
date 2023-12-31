@@ -1,9 +1,7 @@
-{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
-
 {{ if .Get "caption"}}
 <figure class="article-figure">
 {{ end }}
-    <img class="article-image" src="{{ $src.RelPermalink }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }}>
+    <img class="article-image" src="{{ index .Params 0 }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }} style="border-radius: 5px">
     {{ if .Get "caption"}}
         <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>
