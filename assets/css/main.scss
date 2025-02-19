@@ -31,7 +31,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 html {
@@ -503,6 +502,17 @@ footer {
     }
 }
 
+.irt_figure {
+    padding: 0;
+    margin: 0;
+    width: 650px;
+  }
+  
+  .irt_figure img {
+    width: 100%; /* Ensures responsive resizing */
+    /*max-width: 550px; /* Prevents exceeding the set width */
+  }
+  
 // BREAKPOINTS
 @import "partials/_breakpoints";
 @import "custom";

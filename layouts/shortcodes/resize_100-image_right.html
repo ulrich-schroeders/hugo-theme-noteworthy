@@ -1,7 +1,7 @@
 {{ if .Get "caption"}}
 <figure class="article-figure">
 {{ end }}
-    <img class="article-image" width="300px" height="300px" src="{{ index .Params 0 }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }} style="float: right; margin: 7px 5px 10px 15px; border-radius: 3px">
+    <img class="article-image" width="300px" height="300px" src="{{ index .Params 0 }}" {{ with .Get "alt" }}alt="{{.}}"{{ else }}alt=""{{ end }} style="float: right; margin: 7px 5px 10px 15px; border-radius: 5px">
     {{ if .Get "caption"}}
         <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>
